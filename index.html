@@ -1,13 +1,89 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset-"utf-8"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title></title>
+ </head>
+<body>
+    <nav id="navbar">
+        <header>Documentação JS</header>
+        <a class="nav-link" href="#Introdução">Introdução</a>
+        <a class="nav-link" href="#O_que_você_já_deveria_saber">O que você já deveria saber</a>
+        <a class="nav-link" href="#JavaScript_e_Java">JavaScript e Java</a>
+        <a class="nav-link" href="#Hello_world">Hello world</a>
+        <a class="nav-link" href="#Variáveis">Variáveis</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introdução">
+            <header>Introdução</header>
+            <p>JavaScript é uma linguagem de script multiplataforma e orientada a objetos. É uma linguagem pequena e leve. Dentro de um ambiente host (por exemplo, um navegador web), o JavaScript pode ser conectado aos objetos de seu ambiente para fornecer controle programático sobre eles.</p>
+
+            <p>O JavaScript contém uma biblioteca padrão de objetos, como Array, Date e Math, e um conjunto básico de elementos de linguagem, como operadores, estruturas de controle e instruções. O JavaScript básico pode ser estendido para uma variedade de propósitos, complementando-o com objetos adicionais.</p>
+
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");</code>
+            <p>Este é outro parágrafo na seção de introdução.</p>
+        </section>
+
+        <section class="main-section" id="O_que_você_já_deveria_saber">
+            <header>O que você já deveria saber</header>
+            <p>Este guia pressupõe que você tenha os seguintes conhecimentos básicos:</p>
+            <ul>
+                <li>Uma compreensão geral da Internet e da World Wide Web (WWW).</li>
+                <li>Bom conhecimento prático de HyperText Markup Language (HTML).</li>
+                <li>Alguma experiência em programação. Se você é iniciante em programação, experimente um dos tutoriais sobre JavaScript disponíveis na página principal.</li>
+            </ul>
+            <p>Informações adicionais que podem ser úteis:</p>
+            <code>console.log("Este é um exemplo de código");</code>
+        </section>
+
+        <section class="main-section" id="JavaScript_e_Java">
+            <header>JavaScript e Java</header>
+
+            <p>JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferentes em outros. A linguagem JavaScript se assemelha a Java, mas não possui a tipagem estática e a verificação de tipos robusta do Java. JavaScript segue a maioria da sintaxe de expressões Java, convenções de nomenclatura e construções básicas de fluxo de controle, razão pela qual foi renomeado de LiveScript para JavaScript.</p>
+
+            <p>Em contraste com o sistema de classes em tempo de compilação do Java, construído por meio de declarações, o JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados que representam valores numéricos, booleanos e strings. O JavaScript possui um modelo de objeto baseado em protótipos, em vez do modelo de objeto mais comum, baseado em classes.</p>
+
+            <code>// Isto é JavaScript
+vamos x = 10;</code>
+            <p>Outro parágrafo comparando as duas línguas.</p>
+            <ul>
+                <li>JavaScript é interpretado</li>
+                <li>Java é compilado</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <p>Para começar a escrever JavaScript, abra o Scratchpad e escreva seu primeiro código JavaScript "Hello world":</p>
+            <code>function greetMe(yourName) {
+  return "Hello " + yourName;
+}
+
+console.log(greetMe("World"));</code>
+            <p>Este é outro parágrafo explicando o exemplo do hello world.</p>
+            <p>Você pode executar este código no console do seu navegador.</p>
+        </section>
+
+        <section class="main-section" id="Variáveis">
+            <header>Variáveis</header>
+            <p>Você usa variáveis como nomes simbólicos para valores em sua aplicação. Os nomes das variáveis, chamados identificadores, obedecem a certas regras.</p>
+            <p>Um identificador JavaScript deve começar com uma letra, um sublinhado (_) ou um cifrão ($); os caracteres subsequentes também podem ser dígitos (0 a 9). Como o JavaScript diferencia maiúsculas de minúsculas, as letras incluem os caracteres de "A" a "Z" (maiúsculos) e os caracteres de "a" a "z" (minúsculos).</p>
+            <code>var x = 42;
+let y = 13;
+const z = 3.14;</code>
+            <p>Exemplos de declarações de variáveis ​​válidas:</p>
+            <ul>
+                <li>var myVar = 10;</li>
+                <li>let anotherVar = "Hello";</li>
+            </ul>
+            <code>// Mais exemplos de código
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}</code>
+        </section>
+    </main>
+</body>
 </html>
